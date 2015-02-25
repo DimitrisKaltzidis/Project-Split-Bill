@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="jk.com.splitbill.PersonNumber">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/add_people"
+        android:id="@+id/tvAddPeople"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/svPeople"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvAddPeople">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/llAddPeople"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.getbase.floatingactionbutton.AddFloatingActionButton
+        android:id="@+id/semi_transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        fab:fab_plusIconColor="@color/white"
+        fab:fab_colorNormal="@color/pink"
+        fab:fab_colorPressed="@color/pink_pressed"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true" />
+    <!--  android:layout_alignParentRight="true"-->
+
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        fab:fab_icon="@drawable/next"
+        fab:fab_colorNormal="@color/white"
+        fab:fab_colorPressed="@color/white_pressed"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
